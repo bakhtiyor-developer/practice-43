@@ -1,0 +1,298 @@
+*,
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1480px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.faq__box {
+    position: relative;
+}
+
+.modal {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 648px;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: flex-start;
+    background-image: url('../img/popup.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 850px;
+    padding-top: 119px;
+    padding-bottom: 137px;
+    padding-right: 51px;
+    padding-left: 70px;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: none;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-btn {
+    position: absolute;
+    top: 21px;
+    left: 20px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/Vector\ \(15\).svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.faq-hero {
+    background-image: url('../img/kisspng-cat-kitten-dog-veterinarian-veterinary-medicine-cat-wearing-a-stethoscope-5aa8950c1229b5\ 1.png');
+    background-repeat: no-repeat;
+    background-position: 100% 59px;
+    padding-top: 118px;
+}
+
+.faq__title {
+    padding-bottom: 27px;    
+    font-size: 60px;
+    color: #333;
+}
+
+.faq__title--desc {
+    color: #94949494;
+    font-size: 16px;
+    width: 447px;
+    vertical-align: top;
+    padding-bottom: 35px;
+}
+
+.faq__qu--link {
+    max-width: 120px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding-right: 38px;
+    padding-left: 66px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #78C0DE;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 69px; 
+}
+
+.faq__qu--link::before {
+    left: 39px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 1;
+    width: 21px;
+    height: 21px;
+    background-image: url('../img/sit-document.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+.faq__list {
+    list-style-type: none;
+}
+
+.faq__item {
+    border-radius: 5px;
+    width: 752px;
+    background-color: #fff; 
+    padding-top: 25px;
+    padding-bottom: 32px;
+    padding-left: 64px;
+    padding-right: 112px;
+}
+
+.faq__item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.qa__data__span {
+    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.qa__data__span::before {
+    width: 22px;
+    height: 19px;
+    background-image: url('../img/pet\ \(2\).svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+.data__span--date {
+    font-size: 14px;
+}
+
+.data__span--link {
+    display: block;
+    margin-left: 28px;
+    text-decoration: none;
+    color: #78C0DE;
+    font-size: 12px;
+    letter-spacing: 8%;
+}
+
+.qa__answer-text {
+    font-size: 16px;
+    color: #949494;
+}
+
+.qa__question {
+    padding-bottom: 23px;
+}
+
+.sign-box {
+    padding-top: 35px;
+    width: 300px;
+}
+
+.sign-form {
+    margin-left: 133px;
+}
+
+.sign__heading {
+    padding-bottom: 21px;
+    font-size: 20px;
+}
+
+.sign__link {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    max-width: 220px;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    padding-right: 36px;
+    margin-bottom: 21px;
+}
+
+.sign__link--facebook {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    max-width: 220px;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    padding-right: 36px;
+    /* padding-left: 56px; */
+    margin-bottom: 21px;
+}
+
+.sign__link--facebook::before {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../img/Vector\ \(14\).svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+}
+
+.sign__link::before {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    left: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../img/google.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+}
+
+
+.sign__link--facebook {
+    margin-top: 21px;
+}
+
+.sign-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-form__title {
+    font-size: 40px;
+    color: #333;
+    padding-bottom: 25px;
+}
+
+.input {
+    width: 255px;
+    background-color: #fff;
+    border: none;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-bottom: 21px;
+}
+
+.input::placeholder {
+    font-size: 16px;
+    color: #949494;
+}
+
+.text-input {
+    height: 165px;
+}
+
+.text-input::placeholder {
+    position: absolute;
+}
+
+.sign-form__btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 55px;
+    padding-right: 67px;
+    color: #fff;
+    background-color: black;
+    max-width: 70px;
+    border-radius: 3px;
+    text-decoration: none; 
+}
